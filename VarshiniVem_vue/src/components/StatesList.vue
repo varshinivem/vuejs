@@ -45,7 +45,7 @@ methods: {
 },
   async created() {
     try {
-      const response = await axios.get('http://localhost:3000/api');
+      const response = await axios.get('https://node-hw5b.onrender.com/api');
       this.states = response.data;
       console.log(this.states)
     } catch (error) {
